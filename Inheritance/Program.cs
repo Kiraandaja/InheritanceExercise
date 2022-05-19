@@ -28,12 +28,41 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            Bird Peacock = new Bird()
+
+            {
+                Name = "Peacock",
+                Color = "Blue",
+                NumberOfLegs = 2,
+                IsACarnivore = true,
+                TypeOfBeak = "short",
+                IsExtinct = false,
+                HasFeathers = true,
+                IsWarmBlooded = true,
+            };
+            Console.WriteLine($"{Peacock.Name} is a bright flourescent {Peacock.Color}");
+            Console.WriteLine();
 
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+            Reptiles lizard = new Reptiles()
+
+            {
+                Name = "lizard",
+                Color = "green",
+                NumberOfLegs = 4,
+                IsACarnivore = true,
+                TypeOfScales = "granular",
+                IsTrained = true,
+                HasAnOwner = true,
+                IsMultiColored = false,
+
+            };
+            Console.WriteLine($"{lizard.Name} is sometimes a pet or sometimes apart of the wild! A lizard has {lizard.NumberOfLegs} legs.");
+            Console.WriteLine();
         }
     }
 }
